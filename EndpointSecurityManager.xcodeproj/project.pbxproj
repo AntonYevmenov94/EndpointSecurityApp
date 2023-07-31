@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32691E5E2A78046A008F37F7 /* EndpointSecurityManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32691E5D2A78046A008F37F7 /* EndpointSecurityManagerApp.swift */; };
+		32691E602A78046A008F37F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32691E5F2A78046A008F37F7 /* ContentView.swift */; };
+		32691E622A78046B008F37F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32691E612A78046B008F37F7 /* Assets.xcassets */; };
+		32691E652A78046B008F37F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32691E642A78046B008F37F7 /* Preview Assets.xcassets */; };
+		32691E752A78056B008F37F7 /* libEndpointSecurity.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 32691E742A78056B008F37F7 /* libEndpointSecurity.tbd */; };
+		32691E782A78056B008F37F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32691E772A78056B008F37F7 /* main.swift */; };
+		32691E7D2A78056B008F37F7 /* com.cmpny.EndpointSecurityManager.Extension.systemextension in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = 32691E722A78056B008F37F7 /* com.cmpny.EndpointSecurityManager.Extension.systemextension */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		32691E912A781452008F37F7 /* SystemExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32691E902A781452008F37F7 /* SystemExtensions.framework */; };
+		32691E932A782455008F37F7 /* EndpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32691E922A782455008F37F7 /* EndpointManager.swift */; };
+		32691E992A7824A4008F37F7 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32691E942A7824A4008F37F7 /* ConfigurationManager.swift */; };
+		32691E9A2A7824A4008F37F7 /* configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 32691E952A7824A4008F37F7 /* configuration.json */; };
+		32691E9B2A7824A4008F37F7 /* HandleEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32691E962A7824A4008F37F7 /* HandleEventManager.swift */; };
+		32691E9C2A7824A4008F37F7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32691E972A7824A4008F37F7 /* Logger.swift */; };
+		32691E9D2A7824A4008F37F7 /* ClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32691E982A7824A4008F37F7 /* ClientManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32691E7B2A78056B008F37F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32691E522A78046A008F37F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32691E712A78056B008F37F7;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		32691E812A78056B008F37F7 /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				32691E7D2A78056B008F37F7 /* com.cmpny.EndpointSecurityManager.Extension.systemextension in Embed System Extensions */,
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		32691E5A2A78046A008F37F7 /* EndpointSecurityManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EndpointSecurityManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32691E5D2A78046A008F37F7 /* EndpointSecurityManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointSecurityManagerApp.swift; sourceTree = "<group>"; };
+		32691E5F2A78046A008F37F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		32691E612A78046B008F37F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32691E642A78046B008F37F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32691E662A78046B008F37F7 /* EndpointSecurityManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EndpointSecurityManager.entitlements; sourceTree = "<group>"; };
+		32691E722A78056B008F37F7 /* com.cmpny.EndpointSecurityManager.Extension.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; includeInIndex = 0; path = com.cmpny.EndpointSecurityManager.Extension.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
+		32691E742A78056B008F37F7 /* libEndpointSecurity.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libEndpointSecurity.tbd; path = usr/lib/libEndpointSecurity.tbd; sourceTree = SDKROOT; };
+		32691E772A78056B008F37F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		32691E792A78056B008F37F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32691E7A2A78056B008F37F7 /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
+		32691E8F2A7813D5008F37F7 /* gitignore.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = gitignore.txt; sourceTree = "<group>"; };
+		32691E902A781452008F37F7 /* SystemExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemExtensions.framework; path = System/Library/Frameworks/SystemExtensions.framework; sourceTree = SDKROOT; };
+		32691E922A782455008F37F7 /* EndpointManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointManager.swift; sourceTree = "<group>"; };
+		32691E942A7824A4008F37F7 /* ConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
+		32691E952A7824A4008F37F7 /* configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = configuration.json; sourceTree = "<group>"; };
+		32691E962A7824A4008F37F7 /* HandleEventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleEventManager.swift; sourceTree = "<group>"; };
+		32691E972A7824A4008F37F7 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		32691E982A7824A4008F37F7 /* ClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32691E572A78046A008F37F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32691E912A781452008F37F7 /* SystemExtensions.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32691E6F2A78056B008F37F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32691E752A78056B008F37F7 /* libEndpointSecurity.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32691E512A78046A008F37F7 = {
+			isa = PBXGroup;
+			children = (
+				32691E8F2A7813D5008F37F7 /* gitignore.txt */,
+				32691E5C2A78046A008F37F7 /* EndpointSecurityManager */,
+				32691E762A78056B008F37F7 /* Extension */,
+				32691E732A78056B008F37F7 /* Frameworks */,
+				32691E5B2A78046A008F37F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32691E5B2A78046A008F37F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32691E5A2A78046A008F37F7 /* EndpointSecurityManager.app */,
+				32691E722A78056B008F37F7 /* com.cmpny.EndpointSecurityManager.Extension.systemextension */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32691E5C2A78046A008F37F7 /* EndpointSecurityManager */ = {
+			isa = PBXGroup;
+			children = (
+				32691E5D2A78046A008F37F7 /* EndpointSecurityManagerApp.swift */,
+				32691E5F2A78046A008F37F7 /* ContentView.swift */,
+				32691E922A782455008F37F7 /* EndpointManager.swift */,
+				32691E612A78046B008F37F7 /* Assets.xcassets */,
+				32691E662A78046B008F37F7 /* EndpointSecurityManager.entitlements */,
+				32691E632A78046B008F37F7 /* Preview Content */,
+			);
+			path = EndpointSecurityManager;
+			sourceTree = "<group>";
+		};
+		32691E632A78046B008F37F7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				32691E642A78046B008F37F7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		32691E732A78056B008F37F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32691E902A781452008F37F7 /* SystemExtensions.framework */,
+				32691E742A78056B008F37F7 /* libEndpointSecurity.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32691E762A78056B008F37F7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				32691E772A78056B008F37F7 /* main.swift */,
+				32691E982A7824A4008F37F7 /* ClientManager.swift */,
+				32691E952A7824A4008F37F7 /* configuration.json */,
+				32691E942A7824A4008F37F7 /* ConfigurationManager.swift */,
+				32691E962A7824A4008F37F7 /* HandleEventManager.swift */,
+				32691E972A7824A4008F37F7 /* Logger.swift */,
+				32691E792A78056B008F37F7 /* Info.plist */,
+				32691E7A2A78056B008F37F7 /* Extension.entitlements */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32691E592A78046A008F37F7 /* EndpointSecurityManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32691E692A78046B008F37F7 /* Build configuration list for PBXNativeTarget "EndpointSecurityManager" */;
+			buildPhases = (
+				32691E562A78046A008F37F7 /* Sources */,
+				32691E572A78046A008F37F7 /* Frameworks */,
+				32691E582A78046A008F37F7 /* Resources */,
+				32691E812A78056B008F37F7 /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32691E7C2A78056B008F37F7 /* PBXTargetDependency */,
+			);
+			name = EndpointSecurityManager;
+			productName = EndpointSecurityManager;
+			productReference = 32691E5A2A78046A008F37F7 /* EndpointSecurityManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32691E712A78056B008F37F7 /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32691E7E2A78056B008F37F7 /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				32691E6E2A78056B008F37F7 /* Sources */,
+				32691E6F2A78056B008F37F7 /* Frameworks */,
+				32691E702A78056B008F37F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = 32691E722A78056B008F37F7 /* com.cmpny.EndpointSecurityManager.Extension.systemextension */;
+			productType = "com.apple.product-type.system-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32691E522A78046A008F37F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					32691E592A78046A008F37F7 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					32691E712A78056B008F37F7 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 32691E552A78046A008F37F7 /* Build configuration list for PBXProject "EndpointSecurityManager" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32691E512A78046A008F37F7;
+			productRefGroup = 32691E5B2A78046A008F37F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32691E592A78046A008F37F7 /* EndpointSecurityManager */,
+				32691E712A78056B008F37F7 /* Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32691E582A78046A008F37F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32691E652A78046B008F37F7 /* Preview Assets.xcassets in Resources */,
+				32691E622A78046B008F37F7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32691E702A78056B008F37F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32691E9A2A7824A4008F37F7 /* configuration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32691E562A78046A008F37F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32691E932A782455008F37F7 /* EndpointManager.swift in Sources */,
+				32691E602A78046A008F37F7 /* ContentView.swift in Sources */,
+				32691E5E2A78046A008F37F7 /* EndpointSecurityManagerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32691E6E2A78056B008F37F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32691E992A7824A4008F37F7 /* ConfigurationManager.swift in Sources */,
+				32691E9B2A7824A4008F37F7 /* HandleEventManager.swift in Sources */,
+				32691E782A78056B008F37F7 /* main.swift in Sources */,
+				32691E9C2A7824A4008F37F7 /* Logger.swift in Sources */,
+				32691E9D2A7824A4008F37F7 /* ClientManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32691E7C2A78056B008F37F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32691E712A78056B008F37F7 /* Extension */;
+			targetProxy = 32691E7B2A78056B008F37F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		32691E672A78046B008F37F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32691E682A78046B008F37F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		32691E6A2A78046B008F37F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EndpointSecurityManager/EndpointSecurityManager.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EndpointSecurityManager/Preview Content\"";
+				DEVELOPMENT_TEAM = LSW7HU7QB4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmpny.EndpointSecurityManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		32691E6B2A78046B008F37F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EndpointSecurityManager/EndpointSecurityManager.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EndpointSecurityManager/Preview Content\"";
+				DEVELOPMENT_TEAM = LSW7HU7QB4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmpny.EndpointSecurityManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		32691E7F2A78056B008F37F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LSW7HU7QB4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Extension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmpny.EndpointSecurityManager.Extension;
+				PRODUCT_NAME = "$(inherited)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		32691E802A78056B008F37F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LSW7HU7QB4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Extension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmpny.EndpointSecurityManager.Extension;
+				PRODUCT_NAME = "$(inherited)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32691E552A78046A008F37F7 /* Build configuration list for PBXProject "EndpointSecurityManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32691E672A78046B008F37F7 /* Debug */,
+				32691E682A78046B008F37F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32691E692A78046B008F37F7 /* Build configuration list for PBXNativeTarget "EndpointSecurityManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32691E6A2A78046B008F37F7 /* Debug */,
+				32691E6B2A78046B008F37F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32691E7E2A78056B008F37F7 /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32691E7F2A78056B008F37F7 /* Debug */,
+				32691E802A78056B008F37F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32691E522A78046A008F37F7 /* Project object */;
+}
