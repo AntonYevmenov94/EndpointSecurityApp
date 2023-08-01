@@ -4,8 +4,7 @@
 //
 //  Created by Student2023 on 31.07.2023.
 //
-
-import SwiftUI
+ import SwiftUI
 
 struct ContentView: View {
     @State private var disableFileOpening = false
