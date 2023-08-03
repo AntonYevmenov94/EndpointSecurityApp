@@ -1,0 +1,58 @@
+{
+    "directories":
+    {
+        "directory":
+            [
+                {
+                    "path": "/Users/student2023/Desktop/untitled folder",
+                    "open": true,
+                    "write": true,
+                    "allow_open_from":
+                    [
+                        
+                    ],
+                    "unlink": true,
+                    "rename": true,
+                    "move": true
+                },
+                {
+                    "path": "dir2/path2",
+                    "open": true,
+                    "write": true,
+                    "allow_open_from":
+                    [
+                        
+                    ],
+                    "unlink": true,
+                    "rename": true,
+                    "move": true
+                    
+                },
+                {
+                    "path": "dir3/path3",
+                    "open": true,
+                    "write": true,
+                    "allow_open_from":
+                    [
+                        
+                    ],
+                    "unlink": true,
+                    "rename": true,
+                    "move": true
+                },
+                {
+                    "path": "dir4/path4",
+                    "open": true,
+                    "write": true,
+                    "allow_open_from":
+                    [
+                       
+                    ],
+                    "unlink": true,
+                    "rename": true,
+                    "move": true
+                }
+            ]
+    }
+}
+
